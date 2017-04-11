@@ -1,0 +1,275 @@
+@font-face {
+ font-family: Gilroyextrabold; /* Имя шрифта */
+ src: url(../fonts/Gilroyextrabold.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+ font-family: Gilroylight; /* Имя шрифта */
+ src: url(../fonts/Gilroylight.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+ font-family: OpenSans-Light; /* Имя шрифта */
+ src: url(../fonts/OpenSans-Light.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+ font-family: OpenSans-Regular; /* Имя шрифта */
+ src: url(../fonts/OpenSans-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+
+body {
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+a {
+  font-family: OpenSans-Light;
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  margin: 0px;
+  font-size: 48px;
+}
+
+input {
+  color: #000000;
+  opacity: 0.3;
+  font-size: 15px;
+  line-height: 36px;
+  letter-spacing: 0.01em;
+  background: none;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+}
+
+.page-header {
+  background: #ffffff;
+  margin-top: 40px;
+}
+
+.page-header__wrapper {
+  position: relative;
+  width: 1160px;
+  margin: auto;
+  padding-bottom: 100px;
+  background: #f7e296;
+}
+
+.logo {
+  position: absolute;
+  left: 60px;
+  top: -25px;
+  font-size: 48px;
+  text-transform: uppercase;
+}
+
+.logo__title {
+  font-family: Gilroyextrabold;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0px 60px;
+}
+
+.main-nav__item {
+  position: relative;
+  margin-top: 50px;
+  letter-spacing: 0.01em;
+}
+
+.main-nav__item:nth-of-type(4n-3) {
+  width: 440px;
+  margin-right: 100px;
+}
+
+.main-nav__item:nth-of-type(2) {
+  width: 260px;
+}
+
+.main-nav__item:nth-of-type(3),
+.main-nav__item:nth-of-type(4) {
+  text-align: right;
+  width: 120px;
+}
+
+.main-nav__item:nth-of-type(6),
+.main-nav__item:nth-of-type(7) {
+  width: 160px;
+}
+
+.main-nav__item:nth-of-type(8) {
+  text-align: right;
+  width: 180px;
+}
+
+.main-nav__item:nth-of-type(n+5) a {
+  font-size: 18px;
+  letter-spacing: 0.2em;
+  font-family: Gilroyextrabold;
+}
+
+.main-nav__item:nth-of-type(2) a,
+.main-nav__item:nth-of-type(3) a,
+.main-nav__item:nth-of-type(4) a {
+  padding-left: 27px;
+}
+
+.main-nav__item--form::before {
+  position: absolute;
+  left: 0px;
+  top: 8px;
+  width: 20px;
+  height: 20px;
+  content: "";
+  background: url(../img/spritesheet-device.png) no-repeat -807px -81px;
+}
+
+.main-nav__link--entrance::before {
+  position: absolute;
+  left: 0px;
+  top: 12px;
+  width: 20px;
+  height: 20px;
+  content: "";
+  background: url(../img/spritesheet-device.png) no-repeat -297px -31px;
+}
+
+.main-nav__link--compare::before {
+  position: absolute;
+  left: 23px;
+  top: 12px;
+  width: 20px;
+  height: 20px;
+  content: "";
+  background: url(../img/spritesheet-device.png) no-repeat -314px -3px;
+}
+
+.main-nav__link--basket::before {
+  position: absolute;
+  left: 28px;
+  top: 12px;
+  width: 20px;
+  height: 20px;
+  content: "";
+  background: url(../img/spritesheet-device.png) no-repeat -139px -5px;
+}
+
+.main-nav__link--catalog::after {
+  position: absolute;
+  left: 229px;
+  top: 8px;
+  width: 20px;
+  height: 20px;
+  content: "";
+  background: url(../img/spritesheet-device.png) no-repeat -807px -30px;
+}
+
+.main-nav__item:nth-of-type(5) {
+  padding-bottom: 60px;
+}
+
+.main-nav__link:hover,
+.inner-list a:hover,
+.logo:hover {
+  opacity: 0.6;
+}
+
+.main-nav__link:active,
+.inner-list a:active,
+.logo:active {
+  opacity: 0.3;
+}
+
+.main-nav__link {
+  font-size: 15px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.catalog {
+  display: none;
+  flex-direction: row;
+  position: absolute;
+  bottom: -67px;
+}
+
+.main-nav__item:nth-of-type(5):hover .catalog {
+  display: flex;
+}
+
+.inner-list {
+  width: 200px;
+  display: inline;
+}
+
+.inner-list:nth-of-type(1) {
+  width: 240px;
+}
+
+.inner-list:nth-of-type(n) .inner-list__link {
+  font-family: 'Open Sans', sans-serif;
+  color: #000000;
+  font-size: 15px;
+  line-height: 36px;
+  letter-spacing: 0.01em;
+}
+
+.form {
+  display: flex;
+}
+
+.form__input-text {
+  width: 440px;
+  opacity: 0.3;
+  padding-left: 40px;
+}
+
+.form__input-text:hover {
+  opacity: 0.6;
+}
+
+.form__input-text:focus {
+  opacity: 1;
+  outline:none;
+  color: #000000;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  border-bottom: 2px solid #000000;
+}
+
+.form__input-submit {
+  display: none;
+  width: 85px;
+  border: 2px solid #000000;
+  opacity: 1;
+}
+
+.form__input-text:focus ~ .form__input-submit {
+  display: inline-block;
+}
+
+.form__input-submit:hover {
+  color: #ffffff;
+  background: #000000;
+}
+
+.form__input-submit:active {
+  color: rgba(255, 255, 255, 0.3);
+  background: #000000;
+}
