@@ -1,11 +1,25 @@
 @font-face {
  font-family: 'Gilroy'; /* Имя шрифта */
- src: url(../fonts/gilroyextrabold.woff); /* Путь к файлу со шрифтом */
+ font-weight: 900;
+ src: url(../fonts/gilroyextrabold.woff2), url(../fonts/gilroyextrabold.woff); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+ font-family: 'Gilroy'; /* Имя шрифта */
+ font-weight: 300;
+ src: url(../fonts/gilroylight.woff2), url(../fonts/gilroylight.woff); /* Путь к файлу со шрифтом */
 }
 
 @font-face {
  font-family: 'OpenSans'; /* Имя шрифта */
- src: url(../fonts/openSans-Light.woff); /* Путь к файлу со шрифтом */
+ font-weight: 600;
+ src: url(../fonts/opensans.woff2), url(../fonts/opensans.woff); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+ font-family: 'OpenSans'; /* Имя шрифта */
+ font-weight: 300;
+ src: url(../fonts/opensanslight.woff2), url(../fonts/opensanslight.woff); /* Путь к файлу со шрифтом */
 }
 
 *,
@@ -31,7 +45,7 @@ a,
 button,
 input,
 label {
-  transition: 0.3s;
+  transition: all 0.3s ease;
 }
 
 a {
@@ -56,10 +70,6 @@ h1 {
 
 form {
   display: flex;
-}
-
-button:focus {
-  pointer-events: none;
 }
 
 .page-header__wrapper {
