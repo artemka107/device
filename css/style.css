@@ -31,7 +31,7 @@ a,
 button,
 input,
 label {
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 a {
@@ -56,6 +56,10 @@ h1 {
 
 form {
   display: flex;
+}
+
+button:focus {
+  pointer-events: none;
 }
 
 .page-header__wrapper {
@@ -84,7 +88,7 @@ form {
   position: relative;
 }
 
-.form__search::before {
+.form--search::before {
   position: absolute;
   left: 0px;
   top: 8px;
@@ -94,13 +98,14 @@ form {
   background: url(../img/spritesheet-device.png) no-repeat -807px -81px;
 }
 
-.field-text__item {
+.field-text__label {
   font-family: 'OpenSans', 'Helvetica', sans-serif;
   font-weight: 300;
   position: absolute;
   top: 10px;
   left: 39px;
   opacity: 0.3;
+  transition: ease 0.1s;
 }
 
 .field-text__input {
@@ -119,21 +124,18 @@ form {
   opacity: 0.6;
 }
 
-.form__search:hover .field-text__item {
-  top: -13px;
-  left: 30px;
-  transform: scale(0.8);
+.form--search:hover .field-text__label {
   opacity: 0.6;
+  transform: translateY(-25px);
 }
 
-.field-text__input:focus ~ .field-text__item {
-  top: -13px;
-  left: 30px;
-  transform: scale(0.8);
+.field-text__input:focus ~ .field-text__label {
+  transform: translateY(-25px);
   opacity: 1;
+  font-size: 13px;
 }
 
-.field-text__input:hover {
+.form--search:hover .field-text__input {
   opacity: 0.6;
   outline: none;
   box-shadow: inset 0px -2px 0px 0px #000000;
@@ -161,7 +163,7 @@ form {
   display: none;
 }
 
-.field-text__input:hover ~ .btn--search{
+.form--search:hover .btn--search{
   opacity: 0.6;
   display: block;
 }
@@ -250,6 +252,10 @@ form {
   font-weight: 900;
 }
 
+.main-nav__link--after {
+  padding-right: 50px;
+}
+
 .main-nav__item--left {
   width: 540px;
 }
@@ -272,37 +278,46 @@ form {
 }
 
 .inner-nav {
-  left: -300px;
-  top: -30px;
-  opacity: 0;
   position: absolute;
-  transition: 0.5s;
-  transform: scale(0.001);
+  width: 1040px;
+  height: 138px;
+  background: #f7e296;
+  overflow: hidden;
+  left: -2000px;
+  top: 33px;
+  opacity: 0;
+  transition: ease-out 0.5s;
 }
 
-.main-nav__list-item:hover .inner-nav {
-  left: 0px;
-  top: 35px;
+.main-nav__list-item--inner-list {
+  position: relative;
+}
+
+.main-nav__list-item--inner-list:hover .inner-nav {
+  transform: translateX(2000px);
   opacity: 1;
-  transform: scale(1);
 }
 
 .inner-nav__list {
+  position: absolute;
+  height: 138px;
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.inner-nav__item {
 }
 
 .inner-nav__link {
   font-family: 'OpenSans', 'Helvetica', sans-serif;
   font-weight: 300;
-  display: flex;
   text-transform: none;
   font-size: 15px;
   line-height: 36px;
-  width: 200px;
-}
-
-.inner-nav__item:nth-of-type(1) {
-  width: 240px;
+  margin-right: 70px;
 }
 
 .userblock__link--login::before {
