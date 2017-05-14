@@ -82,12 +82,12 @@
           </nav>
         </div>
       </header>
-      <div class="catalog__title-wrapper">
-        <h2 class="catalog__title">Моноподы для селфи</h2>
+      <div class="breadcrumbs-wrapper">
+        <h2 class="breadcrumbs__title">Моноподы для селфи</h2>
         <ul class="breadcrumbs">
           <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Главная</a></li>
           <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Каталог товаров</a></li>
-          <li class="breadcrumbs__item  breadcrumbs__item--last"><a href="#" class="breadcrumbs__link">Моноподы для селфи</a></li>
+          <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Моноподы для селфи</a></li>
         </ul>
       </div>
       <main class="main">
@@ -95,7 +95,7 @@
           <div class="main__title">
             <div class="sort">
               <h3 class="sort__title  sort__title--filter">Фильтр:</h3>
-              <div class="sort__nav">
+              <div class="sort__menu">
                 <h3 class="sort__title">Сортировка:</h3>
                 <ul class="sort__list">
                   <li class="sort__item">
@@ -122,19 +122,19 @@
           <div class="main__content">
             <div class="filter-wrapper">
               <form class="form select-form">
-                <div class="field-checkbox  field-group">
+                <div class="field-range  field-group">
                   <div class="field-group__title">Стоимость</div>
-                  <div class="field-checkbox__wrapper  field-checkbox__wrapper--range">
+                  <div class="field-range__wrapper">
                     <div class="range-controls">
-                      <div class="field-checkbox__scale">
-                        <div class="field-checkbox__bar"></div>
+                      <div class="field-range__scale">
+                        <div class="field-range__bar"></div>
                       </div>
-                      <div class="field-checkbox__toggle field-checkbox__toggle--min"></div>
-                      <div class="field-checkbox__toggle field-checkbox__toggle--max"></div>
+                      <div class="field-range__toggle  field-range__toggle--min"></div>
+                      <div class="field-range__toggle  field-range__toggle--max"></div>
                     </div>
                     <div class="price-controls">
-                      <label class="min-price">от 0<input name="min-price" type="text" value="0"></label>
-                      <label class="max-price">до 5000<input name="max-price" type="text" value="5000"></label>
+                      <label class="price-controls__label  min-price">от 0<input class="price-controls__input" name="min-price" type="text" value="0"></label>
+                      <label class="price-controls__label  max-price">до 5000<input class="price-controls__input" name="max-price" type="text" value="5000"></label>
                     </div>
                   </div>
                 </div>
@@ -143,27 +143,22 @@
                   <div class="field-checkbox__wrapper">
                     <label class="field-checkbox__item">
                       <input class="field-checkbox__input" type="checkbox" checked>
-                      <p class="field-checkbox__pict"></p>
                       <span class="field-checkbox__text">Черный</span>
                     </label>
                     <label class="field-checkbox__item">
                       <input class="field-checkbox__input" type="checkbox" checked>
-                      <p class="field-checkbox__pict"></p>
                       <span class="field-checkbox__text">Белый</span>
                     </label>
                     <label class="field-checkbox__item">
                       <input class="field-checkbox__input" type="checkbox">
-                      <p class="field-checkbox__pict"></p>
                       <span class="field-checkbox__text">Синий</span>
                     </label>
                     <label class="field-checkbox__item">
                       <input class="field-checkbox__input" type="checkbox" checked>
-                      <p class="field-checkbox__pict"></p>
                       <span class="field-checkbox__text">Красный</span>
                     </label>
                     <label class="field-checkbox__item">
                       <input class="field-checkbox__input" type="checkbox">
-                      <p class="field-checkbox__pict"></p>
                       <span class="field-checkbox__text">Розовый</span>
                     </label>
                   </div>
@@ -173,110 +168,110 @@
                   <div class="field-radio__wrapper">
                     <label class="field-radio__item">
                       <input class="field-radio__input" type="radio" name="Bluetooth" value="1" checked>
-                      <p class="field-radio__pict"></p>
                       <span class="field-radio__text">Есть</span>
                     </label>
                     <label class="field-radio__item">
                       <input class="field-radio__input" type="radio" name="Bluetooth" value="2">
-                      <p class="field-radio__pict"></p>
                       <span class="field-radio__text">Нет</span>
                     </label>
                   </div>
                 </div>
-                <div class="btn  field-button">
-                  <button href="#" class="btn__link  field-button__btn" type="submit">Показать</button>
+                <div class="btn  field-action">
+                  <button href="#" class="btn__link  field-action__btn" type="submit">Показать</button>
                 </div>
               </form>
             </div>
             <div class="content-wrapper">
-              <div class="item-wrapper">
-                <div class="item">
-                  <div class="item__img">
-                    <img src="img/item-1.jpg" alt="">
-                    <div class="popap">
-                      <div class="btn  popap__item">
-                        <a href="#" class="btn__link  popap__link">В корзину</a>
-                      </div>
-                      <div class="compare">
-                        <a href="#" class="compare__link">Добавить к сравнению</a>
-                      </div>
-                    </div>
-                  </div>
-                  <table class="table  item__description">
-                    <tr class="table__tr">
-                      <td class="table__td  table__td--name">Любительская селфи-палка</td>
-                      <td class="table__td  table__td--price">500 руб.</td>
-                    </tr>
-                  </table>
+              <div class="item">
+                <div class="item__img">
+                  <img src="img/item-1.jpg" alt="">
                 </div>
-                <div class="item">
-                  <div class="item__img">
-                    <img src="img/item-2.jpg" alt="">
-                    <div class="popap">
-                      <div class="btn  popap__item">
-                        <a href="#" class="btn__link  popap__link">В корзину</a>
-                      </div>
-                      <div class="compare">
-                        <a href="#" class="compare__link">Добавить к сравнению</a>
-                      </div>
-                    </div>
+                <div class="popap">
+                  <div class="btn  popap__btn">
+                    <a href="#" class="btn__link  popap__link">В корзину</a>
                   </div>
-                  <table class="table  item__description">
-                    <tr class="table__tr">
-                      <td class="table__td  table__td--name">Профессиональная селфи-палка</td>
-                      <td class="table__td  table__td--price">1500 руб.</td>
-                    </tr>
-                  </table>
-                </div>
-                <div class="item">
-                  <div class="item__img">
-                    <img src="img/item-3.jpg" alt="">
-                    <div class="popap">
-                      <div class="btn  popap__item">
-                        <a href="#" class="btn__link  popap__link">В корзину</a>
-                      </div>
-                      <div class="compare">
-                        <a href="#" class="compare__link">Добавить к сравнению</a>
-                      </div>
-                    </div>
+                  <div class="compare">
+                    <a href="#" class="compare__link">Добавить к сравнению</a>
                   </div>
-                  <table class="table  item__description">
-                    <tr class="table__tr">
-                      <td class="table__td  table__td--name">Непотопляемая селфи-палка</td>
-                      <td class="table__td  table__td--price">2500 руб.</td>
-                    </tr>
-                  </table>
                 </div>
-                <div class="item">
-                  <div class="item__img">
-                    <img src="img/item-4.jpg" alt="">
-                    <div class="popap">
-                      <div class="btn  popap__item">
-                        <a href="#" class="btn__link  popap__link">В корзину</a>
-                      </div>
-                      <div class="compare">
-                        <a href="#" class="compare__link">Добавить к сравнению</a>
-                      </div>
-                    </div>
+                <table class="table  item__description">
+                  <tr class="table__tr">
+                    <td class="table__td  table__td--name">Любительская селфи-палка</td>
+                    <td class="table__td  table__td--price">500 руб.</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="item">
+                <div class="item__img">
+                  <img src="img/item-2.jpg" alt="">
+                </div>
+                <div class="popap">
+                  <div class="btn  popap__btn">
+                    <a href="#" class="btn__link  popap__link">В корзину</a>
                   </div>
-                  <table class="table  item__description">
-                    <tr class="table__tr">
-                      <td class="table__td  table__td--name">Селфи-палка "Следуй за мной"</td>
-                      <td class="table__td  table__td--price">4900 руб.</td>
-                    </tr>
-                  </table>
+                  <div class="compare">
+                    <a href="#" class="compare__link">Добавить к сравнению</a>
+                  </div>
                 </div>
+                <table class="table  item__description">
+                  <tr class="table__tr">
+                    <td class="table__td  table__td--name">Профессиональная селфи-палка</td>
+                    <td class="table__td  table__td--price">1500 руб.</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="item">
+                <div class="item__img">
+                  <img src="img/item-3.jpg" alt="">
+                </div>
+                <div class="popap">
+                  <div class="btn  popap__btn">
+                    <a href="#" class="btn__link  popap__link">В корзину</a>
+                  </div>
+                  <div class="compare">
+                    <a href="#" class="compare__link">Добавить к сравнению</a>
+                  </div>
+                </div>
+                <table class="table  item__description">
+                  <tr class="table__tr">
+                    <td class="table__td  table__td--name">Непотопляемая селфи-палка</td>
+                    <td class="table__td  table__td--price">2500 руб.</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="item">
+                <div class="item__img">
+                  <img src="img/item-4.jpg" alt="">
+                </div>
+                <div class="popap">
+                  <div class="btn  popap__btn">
+                    <a href="#" class="btn__link  popap__link">В корзину</a>
+                  </div>
+                  <div class="compare">
+                    <a href="#" class="compare__link">Добавить к сравнению</a>
+                  </div>
+                </div>
+                <table class="table  item__description">
+                  <tr class="table__tr">
+                    <td class="table__td  table__td--name">Селфи-палка "Следуй за мной"</td>
+                    <td class="table__td  table__td--price">4900 руб.</td>
+                  </tr>
+                </table>
               </div>
               <ul class="pagination">
-                <li class="pagination__item  pagination__item--left">
+                <li class="pagination__item  pagination__item--prev">
                   <a href="#" class="pagination__link  pagination__link--prev">Назад</a>
                 </li>
                 <li class="pagination__item">
                   <a href="#" class="pagination__link  pagination__link--active">1</a>
+                </li>
+                <li class="pagination__item">
                   <a href="#" class="pagination__link">2</a>
+                </li>
+                <li class="pagination__item">
                   <a href="#" class="pagination__link">3</a>
                 </li>
-                <li class="pagination__item  pagination__item--right">
+                <li class="pagination__item  pagination__item--next">
                   <a href="#" class="pagination__link  pagination__link--next">Вперед</a>
                 </li>
               </ul>
@@ -286,25 +281,23 @@
       </main>
       <footer class="footer-wrapper">
         <div class="footer">
-          <section class="footer__item">
+          <section class="footer__section">
             <h1 class="logo">
               <a href="index.html" class="logo__link">device</a>
             </h1>
-            <div class="userblock-wrapper">
-              <ul class="userblock">
-                <li class="userblock__item">
-                  <a href="#" class="userblock__link  userblock__link--login-footer">Войти</a>
-                </li>
-                <li class="userblock__item">
-                  <a href="#" class="userblock__link  userblock__link--compare-footer">Сравнить</a>
-                </li>
-                <li class="userblock__item">
-                  <a href="#" class="userblock__link  userblock__link--basket-footer">Корзина</a>
-                </li>
-              </ul>
-            </div>
+            <ul class="userblock">
+              <li class="userblock__item">
+                <a href="#" class="userblock__link  userblock__link--login-footer">Войти</a>
+              </li>
+              <li class="userblock__item">
+                <a href="#" class="userblock__link  userblock__link--compare-footer">Сравнить</a>
+              </li>
+              <li class="userblock__item">
+                <a href="#" class="userblock__link  userblock__link--basket-footer">Корзина</a>
+              </li>
+            </ul>
           </section>
-          <section class="footer__item">
+          <section class="footer__section">
             <p class="footer__text">г. Москва, ул. Строителей, 15</p>
             <nav class="footer-nav">
               <ul class="footer-nav__list">
@@ -323,7 +316,7 @@
               <a class="footer__link" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
             </p>
           </section>
-          <section class="footer__item">
+          <section class="footer__section">
             <div class="footer__decoration"></div>
             <div class="social">
               <ul class="social__list">
@@ -338,8 +331,8 @@
                 </li>
               </ul>
             </div>
-            <div class="html-logo">
-              <a href="#" class="html-logo__link"></a>
+            <div class="copyright">
+              <a href="#" class="copyright__link"></a>
             </div>
           </section>
         </div>
